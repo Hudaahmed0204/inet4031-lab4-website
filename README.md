@@ -1,16 +1,9 @@
 # INET4031 - Module 6 - Working with Remote Systems
 
-## Instructions, files, code for Lab 6.
+## Lab Overview
 
-What if you aren't nearby the computer you need to work on?
+What do you do if you aren’t physically near the computer you need to work on?  
 
-Up until this point, our Lab activities have been accomplished by doing them on our laptops.
+Up until now, our Lab activities have been done directly on our laptops. In this activity, we explore the concept of **servers**, which are often located somewhere else. We will connect to them **remotely** and perform tasks as if we were on the server itself.  
 
-In this activity we explore the concept of "servers."  Which typically aren't located where we are.
-
-We have to connect to them remotely
-
-This Lab explores that concept.
-
-
-
+This Lab focuses on understanding and practicing remote system access.
