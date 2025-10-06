@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Lightbulb Webpage - Huda Ahmed</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: white;
+        }
+        p {
+            font-size: 18px;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+        img {
+            width: 150px;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
+    <h1>Lightbulb Webpage - Huda Ahmed</h1>
+    <p>Welcome to my customized webpage! Click the buttons below to turn the lightbulb on and off. 
+       This demonstrates how HTML structures the page and JavaScript can make it interactive. 
+       Everything runs right in your browser, and you don’t need the internet to see it work!</p>
 
-<h2>Simple Web Page with HTML and JavaScript</h2>
+    <img id="bulb" src="pic_bulboff.gif" alt="Lightbulb">
 
-<p>JavaScript can change HTML attribute values.</p>
+    <br>
+    <button onclick="turnOn()">Turn On</button>
+    <button onclick="turnOff()">Turn Off</button>
 
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-
+    <script>
+        function turnOn() {
+            document.getElementById("bulb").src = "pic_bulbon.gif";
+        }
+        function turnOff() {
+            document.getElementById("bulb").src = "pic_bulboff.gif";
+        }
+    </script>
 </body>
 </html>
